@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "NearMe",
+    "slug": "nearme",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "nearme",
+    "splash": {
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nearme.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "NearMe uses your location to show places nearby.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "NearMe uses your location to show places nearby.",
+        "NSCameraUsageDescription": "NearMe uses your camera to add photos to posts.",
+        "NSPhotoLibraryUsageDescription": "NearMe uses your photo library to select photos for posts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.nearme.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-image-picker",
+      "expo-secure-store",
+      [
+        "expo-font",
+        {
+          "fonts": []
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "nearme-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "set PORT=3001&& node .next/standalone/server.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "axios": "^1.7.2",
+    "zustand": "^4.5.4",
+    "react-query": "^3.39.3",
+    "react-hot-toast": "^2.4.1",
+    "lucide-react": "^0.400.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "recharts": "^2.12.7",
+    "react-hook-form": "^7.52.1",
+    "zod": "^3.23.8",
+    "@hookform/resolvers": "^3.9.0",
+    "js-cookie": "^3.0.5",
+    "@types/js-cookie": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5",
+    "tailwindcss": "^3.4.4",
+    "postcss": "^8",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
+  }
+}
